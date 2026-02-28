@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+requests
+pydantic
+huggingface_hub
+langchain
+langchain-community
+langchain-huggingface
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+sqlalchemy
+streamlit
+streamlit-geolocation
