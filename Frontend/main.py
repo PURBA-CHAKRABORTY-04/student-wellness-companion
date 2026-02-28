@@ -4,6 +4,7 @@ from streamlit_geolocation import streamlit_geolocation
 
 # The URLs of your running FastAPI backend
 BACKEND_URL = "https://student-wellness-companion.onrender.com"
+CHAT_URL = f"{BACKEND_URL}/chat"
 JOURNAL_URL = f"{BACKEND_URL}/journal"
 
 # Dummy user ID until we add a real login system
@@ -136,7 +137,7 @@ if user_input := st.chat_input("Ask about stress, study tips, or your mental hea
             # ==========================================
             # 🚨 2. NEW: SCHEDULE ADDED TO PAYLOAD 🚨
             # ==========================================
-            response = requests.post(BACKEND_URL, json={
+            response = requests.post(CHAT_URL, json={
                 "user_id": USER_ID,
                 "user_message": user_input,
                 "current_mood": selected_mood,
