@@ -3,8 +3,8 @@ import requests
 from streamlit_geolocation import streamlit_geolocation 
 
 # The URLs of your running FastAPI backend
-BACKEND_URL = "http://127.0.0.1:8000/chat"
-JOURNAL_URL = "http://127.0.0.1:8000/journal"
+BACKEND_URL = "https://student-wellness-companion.onrender.com"
+JOURNAL_URL = f"{BACKEND_URL}/journal"
 
 # Dummy user ID until we add a real login system
 USER_ID = "student_123"
